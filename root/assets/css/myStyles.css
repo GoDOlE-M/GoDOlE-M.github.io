@@ -1,127 +1,9 @@
-@font-face {
-    font-display: swap;
-    font-family: "Fredoka";
-    font-style: normal;
-    font-weight: 300;
-    src: url("../fonts/fredoka-v9-latin-300.eot");
-    src: url("../fonts/fredoka-v9-latin-300.eot?#iefix") format("embedded-opentype"),url("../fonts/fredoka-v9-latin-300.woff2") format("woff2"),url("../fonts/fredoka-v9-latin-300.woff") format("woff"),url("../fonts/fredoka-v9-latin-300.ttf") format("truetype"),url("../fonts/fredoka-v9-latin-300.svg#Fredoka") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Fredoka";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/fredoka-v9-latin-regular.eot");
-    src: url("../fonts/fredoka-v9-latin-regular.eot?#iefix") format("embedded-opentype"),url("../fonts/fredoka-v9-latin-regular.woff2") format("woff2"),url("../fonts/fredoka-v9-latin-regular.woff") format("woff"),url("../fonts/fredoka-v9-latin-regular.ttf") format("truetype"),url("../fonts/fredoka-v9-latin-regular.svg#Fredoka") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Fredoka";
-    font-style: normal;
-    font-weight: 500;
-    src: url("../fonts/fredoka-v9-latin-500.eot");
-    src: url("../fonts/fredoka-v9-latin-500.eot?#iefix") format("embedded-opentype"),url("../fonts/fredoka-v9-latin-500.woff2") format("woff2"),url("../fonts/fredoka-v9-latin-500.woff") format("woff"),url("../fonts/fredoka-v9-latin-500.ttf") format("truetype"),url("../fonts/fredoka-v9-latin-500.svg#Fredoka") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Fredoka";
-    font-style: normal;
-    font-weight: 600;
-    src: url("../fonts/fredoka-v9-latin-600.eot");
-    src: url("../fonts/fredoka-v9-latin-600.eot?#iefix") format("embedded-opentype"),url("../fonts/fredoka-v9-latin-600.woff2") format("woff2"),url("../fonts/fredoka-v9-latin-600.woff") format("woff"),url("../fonts/fredoka-v9-latin-600.ttf") format("truetype"),url("../fonts/fredoka-v9-latin-600.svg#Fredoka") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Fredoka";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/fredoka-v9-latin-700.eot");
-    src: url("../fonts/fredoka-v9-latin-700.eot?#iefix") format("embedded-opentype"),url("../fonts/fredoka-v9-latin-700.woff2") format("woff2"),url("../fonts/fredoka-v9-latin-700.woff") format("woff"),url("../fonts/fredoka-v9-latin-700.ttf") format("truetype"),url("../fonts/fredoka-v9-latin-700.svg#Fredoka") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 100;
-    src: url("../fonts/lexend-v17-latin-100.eot");
-    src: url("../fonts/lexend-v17-latin-100.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-100.woff2") format("woff2"),url("../fonts/lexend-v17-latin-100.woff") format("woff"),url("../fonts/lexend-v17-latin-100.ttf") format("truetype"),url("../fonts/lexend-v17-latin-100.svg#Lexend") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 200;
-    src: url("../fonts/lexend-v17-latin-200.eot");
-    src: url("../fonts/lexend-v17-latin-200.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-200.woff2") format("woff2"),url("../fonts/lexend-v17-latin-200.woff") format("woff"),url("../fonts/lexend-v17-latin-200.ttf") format("truetype"),url("../fonts/lexend-v17-latin-200.svg#Lexend") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 300;
-    src: url("../fonts/lexend-v17-latin-300.eot");
-    src: url("../fonts/lexend-v17-latin-300.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-300.woff2") format("woff2"),url("../fonts/lexend-v17-latin-300.woff") format("woff"),url("../fonts/lexend-v17-latin-300.ttf") format("truetype"),url("../fonts/lexend-v17-latin-300.svg#Lexend") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/lexend-v17-latin-regular.eot");
-    src: url("../fonts/lexend-v17-latin-regular.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-regular.woff2") format("woff2"),url("../fonts/lexend-v17-latin-regular.woff") format("woff"),url("../fonts/lexend-v17-latin-regular.ttf") format("truetype"),url("../fonts/lexend-v17-latin-regular.svg#Lexend") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 500;
-    src: url("../fonts/lexend-v17-latin-500.eot");
-    src: url("../fonts/lexend-v17-latin-500.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-500.woff2") format("woff2"),url("../fonts/lexend-v17-latin-500.woff") format("woff"),url("../fonts/lexend-v17-latin-500.ttf") format("truetype"),url("../fonts/lexend-v17-latin-500.svg#Lexend") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 600;
-    src: url("../fonts/lexend-v17-latin-600.eot");
-    src: url("../fonts/lexend-v17-latin-600.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-600.woff2") format("woff2"),url("../fonts/lexend-v17-latin-600.woff") format("woff"),url("../fonts/lexend-v17-latin-600.ttf") format("truetype"),url("../fonts/lexend-v17-latin-600.svg#Lexend") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/lexend-v17-latin-700.eot");
-    src: url("../fonts/lexend-v17-latin-700.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-700.woff2") format("woff2"),url("../fonts/lexend-v17-latin-700.woff") format("woff"),url("../fonts/lexend-v17-latin-700.ttf") format("truetype"),url("../fonts/lexend-v17-latin-700.svg#Lexend") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 800;
-    src: url("../fonts/lexend-v17-latin-800.eot");
-    src: url("../fonts/lexend-v17-latin-800.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-800.woff2") format("woff2"),url("../fonts/lexend-v17-latin-800.woff") format("woff"),url("../fonts/lexend-v17-latin-800.ttf") format("truetype"),url("../fonts/lexend-v17-latin-800.svg#Lexend") format("svg")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "Lexend";
-    font-style: normal;
-    font-weight: 900;
-    src: url("../fonts/lexend-v17-latin-900.eot");
-    src: url("../fonts/lexend-v17-latin-900.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-900.woff2") format("woff2"),url("../fonts/lexend-v17-latin-900.woff") format("woff"),url("../fonts/lexend-v17-latin-900.ttf") format("truetype"),url("../fonts/lexend-v17-latin-900.svg#Lexend") format("svg")
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    line-height: 1.6;
 }
 
 
@@ -1849,7 +1731,7 @@ body {
     flex: 1 0 auto
 }
 
-@media(min-width: 48em) {
+@media(min-width: 8em) {
     .page {
         float:right;
         width: calc(100% - 200px)
@@ -1871,7 +1753,7 @@ body {
 }
 
 .page>p {
-    max-width: 52em
+    max-width: 62em
 }
 
 .page:first-child {
@@ -1888,7 +1770,7 @@ body {
 }
 
 .page .page__content p,.page .page__content ul,.page .page__meta p,.page .page__meta ul {
-    max-width: 42em
+    max-width: 62em
 }
 
 .page .page__content p,.page .page__meta p {
@@ -1997,7 +1879,7 @@ body {
 }
 
 .page__hero .wrapper {
-    max-width: 1620px;
+    max-width: 1920px;
     min-height: 12em;
     border-radius: 0;
     margin-left: auto;
@@ -2202,7 +2084,7 @@ body {
         text-rendering: optimizeLegibility
     }
 
-    h1,h2,h3,h4,h5,h6 {
+    h1,h2,h3,h4,h5,h6,h7 {
         color: #000;
         line-height: 1.2;
         margin-bottom: .75rem;
@@ -2231,6 +2113,9 @@ body {
 
     h6 {
         font-size: 1rem
+    }
+    h7 {
+        font-size: .75rem
     }
 
     a,a:visited {
@@ -2293,7 +2178,7 @@ body {
         widows: 3
     }
 
-    h1,h2,h3,h4,h5,h6 {
+    h1,h2,h3,h4,h5,h6,h7 {
         page-break-after: avoid;
         page-break-inside: avoid
     }
@@ -3239,6 +3124,9 @@ h6 {
     font-size: 1em
 }
 
+h7 {
+    font-weight: normal
+}
 small,.small {
     font-size: .75em
 }
@@ -4532,7 +4420,7 @@ code.hljs td {
 .reveal ul li::before {
     content: "•";
     color: #ccc;
-    font-weight: bold;
+    font-weight: normal;
     display: inline-block;
     width: 1em;
     margin-left: -1em
@@ -4968,3 +4856,62 @@ ul li {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.container2 {
+    padding: 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.text-content2 {
+    flex: 1;
+    margin-right: 20px;
+}
+.text-content2 h1 {
+    padding-bottom: 10px;
+}
+.archive__item-teaser2 img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.archive__item-teaser2 {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.archive__item-teaser2 img {
+    width: 100%;
+    border: 1px solid #51555d;
+    border-radius: 8px
+}
+
+.container li {
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.container3 {
+    padding: 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0px;
+}
+.text-content3 {
+    flex: 1;
+    margin-right: 0px;
+}
+
+.container4 {
+    padding: 0px;
+    padding-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0px;
+    gap: 60px; 
+}
