@@ -124,6 +124,7 @@
     src: url("../fonts/lexend-v17-latin-900.eot?#iefix") format("embedded-opentype"),url("../fonts/lexend-v17-latin-900.woff2") format("woff2"),url("../fonts/lexend-v17-latin-900.woff") format("woff"),url("../fonts/lexend-v17-latin-900.ttf") format("truetype"),url("../fonts/lexend-v17-latin-900.svg#Lexend") format("svg")
 }
 
+
 .archive__item {
     display: flex;
     position: relative;
@@ -3906,12 +3907,12 @@ button.copy:focus .tooltiptext {
 }
 
 button.copy:hover {
-    color: #68cb8f;
+    color: #c5cbff;
     background: #1a1a1a
 }
 
 button.copy:hover i.fas {
-    color: #68cb8f
+    color: #c5cbff
 }
 
 button.copy:focus,button.copy:active {
@@ -3920,7 +3921,7 @@ button.copy:focus,button.copy:active {
 }
 
 strong {
-    color: #4cf580
+    color: #dddddd
 }
 
 table.code-comparison {
@@ -4953,6 +4954,17 @@ ul.inline-tags li {
     #filter-row-collapsed {
         display: flex
     }
+}
+
+ul {
+    /*list-style-type: none; /* Remove the dots */
+    margin: 30px 0px 50px 50px; /* Adjust margins as needed */
+    padding: 0px;
+}
+
+ul li {
+    margin-bottom: 30px; /* Increase distance between rows */
+    position: relative; /* For optional custom bullet styling */
 }
 
 /*# sourceMappingURL=main.css.map */
