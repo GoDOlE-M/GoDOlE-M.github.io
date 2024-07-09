@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body class="layout--single">
+    <nav class="skip-links">
+        <h2 class="screen-reader-text">Skip links</h2>
+        <ul>
+            <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+            <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+            <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+        </ul>
+    </nav>
+    <div class="masthead">
+        <div class="masthead__primary">
+           <div class="header-footer-inner-wrap masthead__inner-wrap">
+              <div class="masthead__menu">
+                 <nav id="site-nav"> <!--a class="site-logo" href="/"><img src=" "
+                          alt="GoDOlE" width="140"></a-->
+                    <ul id="visible-links" class="visible-links">
+                       <li class="masthead__menu-item"> <a href="/index.html">Unreal Engine</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/cpp.html">C++</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/Tasks.html">Tasks</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/AutodeskMaya.html">Autodesk Maya</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/Games.html">Games</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/AboutMe.html">About Me</a></li>
+                    </ul>
+  
+                 </nav>
+              </div>
+           </div>
+        </div>
+        <div class="masthead__secondary">
+            <div class="header-footer-inner-wrap masthead__inner-wrap">
+                <div class="masthead__menu">
+                    <nav id="subsection-nav">
+                        <ul class="visible-links">
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uproperty.html">UPROPERTY</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/ufunction.html">UFUNCTION</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uclass.html">UCLASS</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/ustruct.html">USTRUCT</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uinterface.html">UINTERFACE</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uparam.html">UPARAM</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uenumandumeta.html">UENUM and UMETA</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="initial-content">
+        <div id="page__hero" class="page__hero">
+           <div class="wrapper hero_text">
+              <h1 id="page-title" class="page__title gradient" itemprop="headline"> UINTERFACE</h1>
+              <p class="page__lead"> </p>
+           </div>
+        </div>
+        <div id="main" role="main">
+            <aside class="sidebar sticky">
+                <nav class="toc">
+                    <ul class="toc__menu">
+                        <li><a href="#general-points">General Points</a></li>
+                        <li><a href="#blueprint">Blueprint</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article class="page " itemscope itemtype="https://schema.org/CreativeWork">
+                <meta itemprop="headline" content="All UINTERFACE Specifiers">
+                <meta itemprop="description" content="Both main and meta specifiers, including undocumented ones.">
+                <meta itemprop="datePublished" content="2021-10-02T00:00:00+00:00">
+                <meta itemprop="dateModified" content="2022-05-31T00:00:00+00:00">
+                <section class="page__content" itemprop="text">
+                    <p>Unreal's <a
+                            href="https://docs.unrealengine.com/5.1/en-US/interfaces-in-unreal-engine/">UINTERFACE
+                            Specifiers</a> page lists all of the core specifiers and many of the metadata specifiers,
+                        but it is not an exhaustive list.</p>
+                    <p>This page attempts to be an exhaustive list of all the <code
+                            class="language-plaintext highlighter-rouge">UINTERFACE</code> specifiers, giving
+                        explanations, sample code, screenshots and related links for each.</p>
+                    <h1 id="general-points">General Points</h1>
+                    <ul>
+                        <li>Tags are <strong>case insensitive</strong>, but I would recommend sticking to the case
+                            example here for readability.</li>
+                        <li>Quotation marks are optional if the values does not have spaces. e.g. <code
+                                class="language-plaintext highlighter-rouge">someBool=true</code> is treated the same as
+                            <code class="language-plaintext highlighter-rouge">someBool="true"</code>. Again, for
+                            readability I would recommend using quotation marks only around string-type properties.</li>
+                    </ul>
+                    <div class="unreal__outer">
+                        <h1 class="unreal__group" id="blueprint">Blueprint</h1>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="blueprinttype" class="no_toc unreal__prop">Blueprint Type</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UINTERFACE(BlueprintType)');"
+                                                title="Copy UINTERFACE(BlueprintType) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UINTERFACE</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Whether this is set or not does not affect if the interface can be
+                                            implemented by a Blueprint class.</p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/5.1/en-US/interfaces-in-unreal-engine/">
+                                                <p>Exposes this class as a type that can be used for variables in
+                                                    Blueprints.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/5.1/en-US/interfaces-in-unreal-engine/"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="dependson" class="no_toc unreal__prop">Depends On</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UINTERFACE(DependsOn=&quot;abc&quot;)');"
+                                                title="Copy UINTERFACE(DependsOn=&quot;abc&quot;) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UINTERFACE</span><span class="p">(</span><span class="n">DependsOn</span><span class="o">=</span><span class="s">"abc"</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Seems deprecated?</p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/5.1/en-US/interfaces-in-unreal-engine/">
+                                                <p>All classes listed will be compiled before this class. ClassName must
+                                                    specify a class in the same (or a previous) package. Multiple
+                                                    dependency classes can be specified using a single <code
+                                                        class="language-plaintext highlighter-rouge">DependsOn</code>
+                                                    line delimited by commas, or can be specified using a separate <code
+                                                        class="language-plaintext highlighter-rouge">DependsOn</code>
+                                                    line for each class. This is important when a class uses a struct or
+                                                    enum declared in another class as the compiler only knows what is in
+                                                    the classes it has already compiled.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/5.1/en-US/interfaces-in-unreal-engine/"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="minimalapi" class="no_toc unreal__prop">Minimal Api</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UINTERFACE(MinimalApi)');"
+                                                title="Copy UINTERFACE(MinimalApi) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UINTERFACE</span><span class="p">(</span><span class="n">MinimalApi</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/5.1/en-US/interfaces-in-unreal-engine/">
+                                                <p>Causes only the class's type information to be exported for use by
+                                                    other modules. The class can be cast to, but the functions of the
+                                                    class cannot be called (with the exception of inline methods). This
+                                                    improves compile times by not exporting everything for classes that
+                                                    do not need all of their functions accessible in other modules.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/5.1/en-US/interfaces-in-unreal-engine/"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="category" class="no_toc unreal__prop">Category</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UINTERFACE(Category=&quot;abc&quot;)');"
+                                                title="Copy UINTERFACE(Category=&quot;abc&quot;) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UINTERFACE</span><span class="p">(</span><span class="n">Category</span><span class="o">=</span><span class="s">"abc"</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="cannotimplementinterfaceinblueprint" class="no_toc unreal__prop">Cannot
+                                        Implement Interface In Blueprint</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UINTERFACE(meta=(CannotImplementInterfaceInBlueprint))');"
+                                                title="Copy UINTERFACE(meta=(CannotImplementInterfaceInBlueprint)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UINTERFACE</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">CannotImplementInterfaceInBlueprint</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>By default all <code
+                                                class="language-plaintext highlighter-rouge">UINTERFACE</code>s are
+                                            implementable in Blueprints. This tag changes that behavior. You may want to
+                                            set this on interfaces that are for low-level C++ classes only, to clean up
+                                            the interface drop-down box in Blueprints.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="displayname" class="no_toc unreal__prop">Display Name</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UINTERFACE(meta=(DisplayName=&quot;abc&quot;))');"
+                                                title="Copy UINTERFACE(meta=(DisplayName=&quot;abc&quot;)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UINTERFACE</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">DisplayName</span><span class="o">=</span><span class="s">"abc"</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="experimental" class="no_toc unreal__prop">Experimental</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UINTERFACE(Experimental)');"
+                                                title="Copy UINTERFACE(Experimental) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UINTERFACE</span><span class="p">(</span><span class="n">Experimental</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </article>
+        </div>
+    </div>
+    <div id="footer" class="page__footer">
+        <footer>
+           <div class="header-footer-inner-wrap">
+              <div class="page__footer-follow">
+                 <ul id="social-icons"></ul>
+              </div>
+              <div class="page__footer-copyright">2024 GoDOlE...
+              </div>
+           </div>
+        </footer>
+     </div>
+     <script src="/root/js/metadata.js"></script>
+     <script src="/root/js/fetch-info.js"></script>
+  
+  </body>
+
+</html>

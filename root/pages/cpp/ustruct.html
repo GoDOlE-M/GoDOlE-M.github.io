@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body class="layout--single">
+    <nav class="skip-links">
+        <h2 class="screen-reader-text">Skip links</h2>
+        <ul>
+            <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+            <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+            <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+        </ul>
+    </nav>
+    <div class="masthead">
+        <div class="masthead__primary">
+           <div class="header-footer-inner-wrap masthead__inner-wrap">
+              <div class="masthead__menu">
+                 <nav id="site-nav"> <!--a class="site-logo" href="/"><img src=" "
+                          alt="GoDOlE" width="140"></a-->
+                    <ul id="visible-links" class="visible-links">
+                       <li class="masthead__menu-item"> <a href="/index.html">Unreal Engine</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/cpp.html">C++</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/Tasks.html">Tasks</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/AutodeskMaya.html">Autodesk Maya</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/Games.html">Games</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/AboutMe.html">About Me</a></li>
+                    </ul>
+  
+                 </nav>
+              </div>
+           </div>
+        </div>
+        <div class="masthead__secondary">
+            <div class="header-footer-inner-wrap masthead__inner-wrap">
+                <div class="masthead__menu">
+                    <nav id="subsection-nav">
+                        <ul class="visible-links">
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uproperty.html">UPROPERTY</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/ufunction.html">UFUNCTION</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uclass.html">UCLASS</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/ustruct.html">USTRUCT</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uinterface.html">UINTERFACE</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uparam.html">UPARAM</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uenumandumeta.html">UENUM and UMETA</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="initial-content">
+        <div id="page__hero" class="page__hero">
+           <div class="wrapper hero_text">
+              <h1 id="page-title" class="page__title gradient" itemprop="headline"> USTRUCT</h1>
+              <p class="page__lead"> </p>
+           </div>
+        </div>
+        <div id="main" role="main">
+            <aside class="sidebar sticky">
+                <nav class="toc">
+                    <ul class="toc__menu">
+                        <li><a href="#general-points">General Points</a></li>
+                        <li><a href="#blueprint-logic">Blueprint Logic</a></li>
+                        <li><a href="#c">C++</a></li>
+                        <li><a href="#deprecated">Deprecated</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article class="page " itemscope itemtype="https://schema.org/CreativeWork">
+                <meta itemprop="headline" content="All USTRUCT Specifiers">
+                <meta itemprop="description" content="Both main and meta specifiers, including undocumented ones.">
+                <meta itemprop="datePublished" content="2021-10-04T00:00:00+00:00">
+                <section class="page__content" itemprop="text">
+
+                    <p>Unreal's <a
+                            href="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/">USTRUCT
+                            Specifiers</a> page lists all of the core specifiers but a lot of the metadata specifiers
+                        that it lists are only usable with UCLASS.</p>
+                    <p>This page attempts to be an exhaustive list of all the <code
+                            class="language-plaintext highlighter-rouge">USTRUCT</code> specifiers, giving explanations,
+                        sample code, screenshots and related links for each.</p>
+                    <h1 id="general-points">General Points</h1>
+                    <ul>
+                        <li>Tags are <strong>case insensitive</strong>, but I would recommend sticking to the case
+                            example here for readability.</li>
+                        <li>Quotation marks are optional if the values does not have spaces. e.g. <code
+                                class="language-plaintext highlighter-rouge">someBool=true</code> is treated the same as
+                            <code class="language-plaintext highlighter-rouge">someBool="true"</code>. Again, for
+                            readability I would recommend using quotation marks only around string-type properties.</li>
+                    </ul>
+                    <div class="unreal__outer">
+                        <h1 class="unreal__group" id="blueprint-logic">Blueprint Logic</h1>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="blueprinttype" class="no_toc unreal__prop">Blueprint Type</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'USTRUCT(BlueprintType)');"
+                                                title="Copy USTRUCT(BlueprintType) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Setting this allows the struct to be added as a variable to Blueprints. To
+                                            expose a struct to blueprints with <code
+                                                class="language-plaintext highlighter-rouge">BlueprintReadOnly</code>,
+                                            the struct must be marked with <code
+                                                class="language-plaintext highlighter-rouge">BlueprintType</code>.</p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/">
+                                                <p>Exposes this struct as a type that can be used for variables in
+                                                    Blueprints.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="hiddenbydefault" class="no_toc unreal__prop">Hidden By Default</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'USTRUCT(meta=(HiddenByDefault))');"
+                                                title="Copy USTRUCT(meta=(HiddenByDefault)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">HiddenByDefault</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h">
+                                                <p>Pins in Make and Break nodes are hidden by default.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="disablesplitpin" class="no_toc unreal__prop">Disable Split Pin</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Related:</h5>
+                                        <ul class="proplist related">
+                                            <li> <a href="#hasnativemake"><code>HasNativeMake</code></a></li>
+                                            <li> <a href="#hasnativebreak"><code>HasNativeBreak</code></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'USTRUCT(meta=(DisableSplitPin))');"
+                                                title="Copy USTRUCT(meta=(DisableSplitPin)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">DisableSplitPin</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>"Split Struct Pin" is an option available when right-clicking the return node
+                                            of a <code class="language-plaintext highlighter-rouge">UFUNCTION</code>. It
+                                            is only available if all the variables within the struct are exposed to
+                                            blueprints, and if <code
+                                                class="language-plaintext highlighter-rouge">DisableSplitPin</code> is
+                                            not present in the USTRUCT definition.</p>
+                                        <p>Why you might want to use it is a more interesting question. The only example
+                                            of this being used in the codebase is with <code
+                                                class="language-plaintext highlighter-rouge">FGameplayTag</code>.
+                                            Gameplay tags are structs but only contain an <code
+                                                class="language-plaintext highlighter-rouge">FName</code> property that
+                                            is used as their ID. I suppose that <code
+                                                class="language-plaintext highlighter-rouge">DisableSplitPin</code> is
+                                            used because Epic wanted to discourage users from splitting the struct out
+                                            to <code class="language-plaintext highlighter-rouge">FName</code> when it's
+                                            much more helpful to keep it as an <code
+                                                class="language-plaintext highlighter-rouge">FStruct</code> and use all
+                                            the helper functions within.</p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h">
+                                                <p>Indicates that node pins of this struct type cannot be split</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">DisableSplitPin</span><span class="p">))</span>
+<span class="k">struct</span> <span class="nc">FGameplayTag</span>
+<span class="p">{</span>
+    <span class="n">GENERATED_BODY</span><span class="p">()</span>
+    <span class="n">UPROPERTY</span><span class="p">(</span><span class="n">VisibleAnywhere</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="n">GameplayTags</span><span class="p">)</span>
+    <span class="n">FName</span> <span class="n">TagName</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="hasnativebreak" class="no_toc unreal__prop">Has Native Break</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string (Function
+                                            name)</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Related:</h5>
+                                        <ul class="proplist related">
+                                            <li> <a href="#hasnativemake"><code>HasNativeMake</code></a></li>
+                                            <li> <a href="#disablesplitpin"><code>DisableSplitPin</code></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'USTRUCT(meta=(HasNativeBreak=&quot;abc&quot;))');"
+                                                title="Copy USTRUCT(meta=(HasNativeBreak=&quot;abc&quot;)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">HasNativeBreak</span><span class="o">=</span><span class="s">"abc"</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p><code class="language-plaintext highlighter-rouge">HasNativeBreak</code> lets
+                                            you specify a static <code
+                                                class="language-plaintext highlighter-rouge">UFUNCTION()</code> to use
+                                            instead of the default behavior when a user chooses "Break (Struct)"</p>
+                                        <p>By default all properties marked as <code
+                                                class="language-plaintext highlighter-rouge">BlueprintReadOnly</code> or
+                                            <code class="language-plaintext highlighter-rouge">BlueprintReadWrite</code>
+                                            would be present in the node. Defining a native break function can let you
+                                            customize what is present in that node.</p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h">
+                                                <p>Indicates that the struct has a custom break node (and what the path
+                                                    to the BlueprintCallable UFunction is) that should be used instead
+                                                    of the default BreakStruct node.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">HasNativeBreak</span> <span class="o">=</span> <span class="s">"ExampleProject.CatHelperLibrary.BreakCatStruct"</span><span class="p">))</span>
+<span class="k">struct</span> <span class="nc">FCat</span>
+<span class="p">{</span>
+  <span class="n">GENERATED_BODY</span><span class="p">()</span>
+<span class="nl">public:</span>
+  <span class="n">UPROPERTY</span><span class="p">()</span>
+  <span class="n">FString</span> <span class="n">Name</span><span class="p">;</span>
+  <span class="n">UPROPERTY</span><span class="p">()</span>
+  <span class="n">FLinearColor</span> <span class="n">CoatColor</span><span class="p">;</span>
+  <span class="n">UPROPERTY</span><span class="p">()</span>
+  <span class="n">FString</span> <span class="n">SecretPetName</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="n">UCLASS</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">UCatHelperLibrary</span> <span class="o">:</span> <span class="k">public</span> <span class="n">UBlueprintFunctionLibrary</span>
+<span class="p">{</span>
+  <span class="n">GENERATED_BODY</span><span class="p">()</span>
+<span class="nl">public:</span>
+  <span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintPure</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="s">"Cat"</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">BlueprintThreadSafe</span><span class="p">))</span>
+  <span class="k">static</span> <span class="kt">void</span> <span class="n">BreakCatStruct</span><span class="p">(</span><span class="k">const</span> <span class="n">FCat</span><span class="o">&amp;</span> <span class="n">Cat</span><span class="p">,</span> <span class="n">FString</span><span class="o">&amp;</span> <span class="n">OutName</span><span class="p">,</span> <span class="n">FLinearColor</span><span class="o">&amp;</span> <span class="n">OutCoatColor</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="kt">void</span> <span class="n">UCatHelperLibrary</span><span class="o">::</span><span class="n">BreakCatStruct</span><span class="p">(</span><span class="k">const</span> <span class="n">FCat</span><span class="o">&amp;</span> <span class="n">Cat</span><span class="p">,</span> <span class="n">FString</span><span class="o">&amp;</span> <span class="n">OutName</span><span class="p">,</span> <span class="n">FLinearColor</span><span class="o">&amp;</span> <span class="n">OutCoatColor</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">OutName</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span>
+  <span class="n">OutCoatColor</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">.</span><span class="n">CoatColor</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p><img
+                                                src="/assets/data/UE-Specifier-Docs/images/ustruct/hasnativebreak.webp" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="hasnativemake" class="no_toc unreal__prop">Has Native Make</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string (Function
+                                            name)</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Related:</h5>
+                                        <ul class="proplist related">
+                                            <li> <a href="#hasnativebreak"><code>HasNativeBreak</code></a></li>
+                                            <li> <a href="#disablesplitpin"><code>DisableSplitPin</code></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'USTRUCT(meta=(HasNativeMake=&quot;abc&quot;))');"
+                                                title="Copy USTRUCT(meta=(HasNativeMake=&quot;abc&quot;)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">HasNativeMake</span><span class="o">=</span><span class="s">"abc"</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Similar to <code
+                                                class="language-plaintext highlighter-rouge">HasNativeBreak</code>,
+                                            <code class="language-plaintext highlighter-rouge">HasNativeMake</code>
+                                            allows you to specify a <code
+                                                class="language-plaintext highlighter-rouge">static</code> <code
+                                                class="language-plaintext highlighter-rouge">UFUNCTION()</code> to use
+                                            to create and fill the values of a struct, without having to make the values
+                                            within the struct <code
+                                                class="language-plaintext highlighter-rouge">BlueprintReadWrite</code>.
+                                        </p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h">
+                                                <p>Indicates that the struct has a custom make node (and what the path
+                                                    to the BlueprintCallable UFunction is) that should be used instead
+                                                    of the default MakeStruct node.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">HasNativeMake</span> <span class="o">=</span> <span class="s">"ExampleProject.CatHelperLibrary.MakeCatStruct"</span><span class="p">))</span>
+<span class="k">struct</span> <span class="nc">FCat</span>
+<span class="p">{</span>
+  <span class="n">GENERATED_BODY</span><span class="p">()</span>
+<span class="nl">public:</span>
+  <span class="n">UPROPERTY</span><span class="p">()</span>
+  <span class="n">FString</span> <span class="n">Name</span><span class="p">;</span>
+  <span class="n">UPROPERTY</span><span class="p">()</span>
+  <span class="n">FLinearColor</span> <span class="n">CoatColor</span><span class="p">;</span>
+  <span class="n">UPROPERTY</span><span class="p">()</span>
+  <span class="n">FString</span> <span class="n">SecretPetName</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="n">UCLASS</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">UCatHelperLibrary</span> <span class="o">:</span> <span class="k">public</span> <span class="n">UBlueprintFunctionLibrary</span>
+<span class="p">{</span>
+  <span class="n">GENERATED_BODY</span><span class="p">()</span>
+<span class="nl">public:</span>
+  <span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintPure</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="s">"Cat"</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">BlueprintThreadSafe</span><span class="p">))</span>
+  <span class="k">static</span> <span class="n">FCat</span> <span class="n">MakeCatStruct</span><span class="p">(</span><span class="n">FString</span> <span class="n">Name</span><span class="p">,</span> <span class="n">FLinearColor</span> <span class="n">CoatColor</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="n">FCat</span> <span class="n">UCatHelperLibrary</span><span class="o">::</span><span class="n">MakeCatStruct</span><span class="p">(</span><span class="n">FString</span> <span class="n">Name</span><span class="p">,</span> <span class="n">FLinearColor</span> <span class="n">CoatColor</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">FCat</span> <span class="n">Cat</span><span class="p">;</span>
+  <span class="n">Cat</span><span class="p">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">Name</span><span class="p">;</span>
+  <span class="n">Cat</span><span class="p">.</span><span class="n">CoatColor</span> <span class="o">=</span> <span class="n">CoatColor</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">Cat</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p><img
+                                                src="/assets/data/UE-Specifier-Docs/images/ustruct/hasnativemake.webp" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="unreal__group" id="c">C++</h1>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="noexport" class="no_toc unreal__prop">No Export</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'USTRUCT(NoExport)');"
+                                                title="Copy USTRUCT(NoExport) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">NoExport</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>"No autogenerated code will be created" means you don't need to write <code
+                                                class="language-plaintext highlighter-rouge">GENERATED_BODY</code></p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/">
+                                                <p>No autogenerated code will be created for this class; the header is
+                                                    only provided for parsing metadata.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="unreal__group" id="deprecated">Deprecated</h1>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="immutable" class="no_toc unreal__prop">Immutable</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'USTRUCT(Immutable)');"
+                                                title="Copy USTRUCT(Immutable) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">Immutable</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/">
+                                                <p>Immutable is only legal in Object.h and is being phased out, do not
+                                                    use on new structs!.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="atomic" class="no_toc unreal__prop">Atomic</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'USTRUCT(Atomic)');"
+                                                title="Copy USTRUCT(Atomic) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">Atomic</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>This is listed in the official documentation but I can't find a single use of
+                                            it inside the Unreal Engine codebase.</p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/">
+                                                <p>Indicates that this struct should always be serialized as a single
+                                                    unit. No autogenerated code will be created for this class; the
+                                                    header is only provided to parse metadata from.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/GameplayArchitecture/Structs/Specifiers/"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </article>
+        </div>
+    </div>
+    <div id="footer" class="page__footer">
+        <footer>
+           <div class="header-footer-inner-wrap">
+              <div class="page__footer-follow">
+                 <ul id="social-icons"></ul>
+              </div>
+              <div class="page__footer-copyright">2024 GoDOlE...
+              </div>
+           </div>
+        </footer>
+     </div>
+     <script src="/root/js/metadata.js"></script>
+     <script src="/root/js/fetch-info.js"></script>
+  
+  </body>
+
+</html>

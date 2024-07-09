@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body class="layout--single">
+    <nav class="skip-links">
+        <h2 class="screen-reader-text">Skip links</h2>
+        <ul>
+            <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+            <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+            <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+        </ul>
+    </nav>
+    <div class="masthead">
+        <div class="masthead__primary">
+           <div class="header-footer-inner-wrap masthead__inner-wrap">
+              <div class="masthead__menu">
+                 <nav id="site-nav"> <!--a class="site-logo" href="/"><img src=" "
+                          alt="GoDOlE" width="140"></a-->
+                    <ul id="visible-links" class="visible-links">
+                       <li class="masthead__menu-item"> <a href="/index.html">Unreal Engine</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/cpp.html">C++</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/Tasks.html">Tasks</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/AutodeskMaya.html">Autodesk Maya</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/Games.html">Games</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/AboutMe.html">About Me</a></li>
+                    </ul>
+  
+                 </nav>
+              </div>
+           </div>
+        </div>
+        <div class="masthead__secondary">
+            <div class="header-footer-inner-wrap masthead__inner-wrap">
+                <div class="masthead__menu">
+                    <nav id="subsection-nav">
+                        <ul class="visible-links">
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uproperty.html">UPROPERTY</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/ufunction.html">UFUNCTION</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uclass.html">UCLASS</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/ustruct.html">USTRUCT</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uinterface.html">UINTERFACE</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uparam.html">UPARAM</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uenumandumeta.html">UENUM and UMETA</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="initial-content">
+        <div id="page__hero" class="page__hero">
+           <div class="wrapper hero_text">
+              <h1 id="page-title" class="page__title gradient" itemprop="headline"> UPARAM</h1>
+              <p class="page__lead"> </p>
+           </div>
+        </div>
+        <div id="main" role="main">
+            <aside class="sidebar sticky">
+                <nav class="toc">
+                    <ul class="toc__menu">
+                        <li><a href="#general-points">General Points</a></li>
+                        <li><a href="#blueprint-logic">Blueprint Logic</a></li>
+                        <li><a href="#pickers">Pickers</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article class="page " itemscope itemtype="https://schema.org/CreativeWork">
+                <meta itemprop="headline" content="All UPARAM Specifiers">
+                <meta itemprop="description" content="Both main and meta specifiers, including undocumented ones.">
+                <meta itemprop="datePublished" content="2021-10-02T00:00:00+00:00">
+                <section class="page__content" itemprop="text">
+
+                    <p>Unreal's UPARAM Specifiers page lists all of the core specifiers and many of the metadata
+                        specifiers, but it is not an exhaustive list.</p>
+                    <p>This page attempts to be an exhaustive list of all the <code
+                            class="language-plaintext highlighter-rouge">UPARAM</code> specifiers, giving explanations,
+                        sample code, screenshots and related links for each.</p>
+                    <h1 id="general-points">General Points</h1>
+                    <ul>
+                        <li>Tags are <strong>case insensitive</strong>, but I would recommend sticking to the case
+                            example here for readability.</li>
+                        <li>Quotation marks are optional if the values does not have spaces. e.g. <code
+                                class="language-plaintext highlighter-rouge">someBool=true</code> is treated the same as
+                            <code class="language-plaintext highlighter-rouge">someBool="true"</code>. Again, for
+                            readability I would recommend using quotation marks only around string-type properties.</li>
+                    </ul>
+                    <div class="unreal__outer">
+                        <h1 class="unreal__group" id="blueprint-logic">Blueprint Logic</h1>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="displayname" class="no_toc unreal__prop">Display Name</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UPARAM(DisplayName=&quot;abc&quot;)');"
+                                                title="Copy UPARAM(DisplayName=&quot;abc&quot;) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UPARAM</span><span class="p">(</span><span class="n">DisplayName</span><span class="o">=</span><span class="s">"abc"</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Allows renaming parameters in <code
+                                                class="language-plaintext highlighter-rouge">UFUNCTION</code> functions.
+                                        </p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+<span class="kt">void</span> <span class="nf">MakeDog</span><span class="p">(</span>
+  <span class="n">UPARAM</span><span class="p">(</span><span class="n">DisplayName</span> <span class="o">=</span> <span class="s">"Years (dog years)"</span><span class="p">)</span> <span class="kt">float</span> <span class="n">Years</span><span class="p">,</span>
+  <span class="n">UPARAM</span><span class="p">(</span><span class="n">DisplayName</span> <span class="o">=</span> <span class="s">"Fur Color"</span><span class="p">)</span> <span class="n">FLinearColor</span> <span class="n">Color</span><span class="p">);</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="ref" class="no_toc unreal__prop">ref</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'UPARAM(ref)');"
+                                                title="Copy UPARAM(ref) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UPARAM</span><span class="p">(</span><span class="n">ref</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>If a <code class="language-plaintext highlighter-rouge">UFUNCTION</code>
+                                            parameter is a non-const reference, it is displayed as an output pin by
+                                            default. It's assumed that the struct will be filled.</p>
+                                        <p>I would think hard about what the purpose is of your function when choosing
+                                            if you need to use <code
+                                                class="language-plaintext highlighter-rouge">UPARAM()</code>. Looking at
+                                            the example code below:</p>
+                                        <ul>
+                                            <li><code class="language-plaintext highlighter-rouge">FillDogInfo</code>
+                                                takes an empty data structure that is provided to it, and fills it out.
+                                                In Blueprints it is shown as an output pin.</li>
+                                            <li><code
+                                                    class="language-plaintext highlighter-rouge">UseAndFillDogInfo</code>
+                                                takes a <strong>reference</strong> to a data structure as input. That
+                                                means it can change the values within the data structure. If you do not
+                                                need to change the values of the data structure, then see <code
+                                                    class="language-plaintext highlighter-rouge">UseDogInfo</code>.</li>
+                                            <li><code class="language-plaintext highlighter-rouge">UseDogInfo</code>
+                                                takes a <code class="language-plaintext highlighter-rouge">const</code>
+                                                reference data structure. It cannot change the values of the data.</li>
+                                        </ul>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="c1">// Fill an empty data structure</span>
+<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+<span class="kt">void</span> <span class="nf">FillDogInfo</span><span class="p">(</span><span class="n">FDogInfo</span><span class="o">&amp;</span> <span class="n">OutResult</span><span class="p">);</span>
+
+<span class="c1">// Use existing data, add some more</span>
+<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+<span class="kt">void</span> <span class="nf">UseAndFillDogInfo</span><span class="p">(</span>
+    <span class="n">UPARAM</span><span class="p">(</span><span class="n">ref</span><span class="p">)</span> <span class="n">FDogInfo</span><span class="o">&amp;</span> <span class="n">SearchParams</span><span class="p">);</span>
+
+<span class="c1">// Just use existing data and don't change it</span>
+<span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+<span class="kt">void</span> <span class="nf">UseDogInfo</span><span class="p">(</span><span class="k">const</span> <span class="n">FDogInfo</span><span class="o">&amp;</span> <span class="n">SearchParams</span><span class="p">);</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p><img src="/root/images/cpp/Udata/uparam-ref.webp" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="unreal__group" id="pickers">Pickers</h1>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="allowabstract" class="no_toc unreal__prop">Allow Abstract</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-check-square "></i>bool</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UPARAM(meta=(AllowAbstract=true))');"
+                                                title="Copy UPARAM(meta=(AllowAbstract=true)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UPARAM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">AllowAbstract</span><span class="o">=</span><span class="nb">true</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Works exclusively with <code
+                                                class="language-plaintext highlighter-rouge">TSubclassOf</code>. By
+                                            default, <code
+                                                class="language-plaintext highlighter-rouge">TSubclassOf&lt;T&gt;</code>
+                                            will allow abstract choosing classes.</p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="s">"Composure"</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">DeterminesOutputType</span> <span class="o">=</span> <span class="s">"OutputType"</span><span class="p">))</span>
+<span class="n">UCompositingElementOutput</span><span class="o">*</span> <span class="nf">FindOutputPass</span><span class="p">(</span><span class="n">UPARAM</span><span class="p">(</span><span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">AllowAbstract</span> <span class="o">=</span> <span class="s">"false"</span><span class="p">))</span><span class="n">TSubclassOf</span><span class="o">&lt;</span><span class="n">UCompositingElementOutput</span><span class="o">&gt;</span> <span class="n">OutputType</span><span class="p">,</span> <span class="n">FName</span> <span class="n">OptionalPassName</span> <span class="o">=</span> <span class="n">NAME_None</span><span class="p">);</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="categories" class="no_toc unreal__prop">Categories</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string
+                                            (comma-separated list of gameplay tags)</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UPARAM(meta=(Categories=&quot;abc&quot;))');"
+                                                title="Copy UPARAM(meta=(Categories=&quot;abc&quot;)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UPARAM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">Categories</span><span class="o">=</span><span class="s">"abc"</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Limits the Gameplay Tags that are selectable on the <code
+                                                class="language-plaintext highlighter-rouge">UFUNCTION</code>. Works in
+                                            the same way as the <code
+                                                class="language-plaintext highlighter-rouge">UPROPERTY</code> <code
+                                                class="language-plaintext highlighter-rouge">Categories</code> meta
+                                            flag.</p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span>
+<span class="kt">void</span> <span class="nf">SellItems</span><span class="p">(</span><span class="n">UPARAM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">Categories</span><span class="o">=</span><span class="s">"Inventory.Item"</span><span class="p">))</span><span class="n">FGameplayTag</span> <span class="n">Itemtag</span><span class="p">,</span> <span class="n">int32</span> <span class="n">Count</span><span class="p">);</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">,</span> <span class="n">BlueprintAuthorityOnly</span><span class="p">,</span> <span class="n">Category</span> <span class="o">=</span> <span class="n">GameplayEffects</span><span class="p">)</span>
+<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">UpdateActiveGameplayEffectSetByCallerMagnitude</span><span class="p">(</span><span class="n">FActiveGameplayEffectHandle</span> <span class="n">ActiveHandle</span><span class="p">,</span> <span class="n">UPARAM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">Categories</span> <span class="o">=</span> <span class="s">"SetByCaller"</span><span class="p">))</span><span class="n">FGameplayTag</span> <span class="n">SetByCallerTag</span><span class="p">,</span> <span class="kt">float</span> <span class="n">NewValue</span><span class="p">);</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="mustimplement" class="no_toc unreal__prop">Must Implement</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string
+                                            (comma-separated list of interface script paths)</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UPARAM(meta=(MustImplement=&quot;abc&quot;))');"
+                                                title="Copy UPARAM(meta=(MustImplement=&quot;abc&quot;)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UPARAM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">MustImplement</span><span class="o">=</span><span class="s">"abc"</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Limits the classes selectable in blueprint from <code
+                                                class="language-plaintext highlighter-rouge">TSoftClassPtr</code> or
+                                            <code class="language-plaintext highlighter-rouge">TSubclassOf</code> to
+                                            only those that implement the named interfaces</p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UFUNCTION</span><span class="p">(</span><span class="n">unreliable</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">BlueprintCallable</span><span class="p">,</span> <span class="n">Category</span><span class="o">=</span><span class="s">"Game|Feedback"</span><span class="p">)</span>
+<span class="kt">void</span> <span class="nf">ClientSpawnGenericCameraLensEffect</span><span class="p">(</span><span class="n">UPARAM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">MustImplement</span> <span class="o">=</span><span class="s">"CameraLensEffectInterface"</span><span class="p">))</span> <span class="n">TSubclassOf</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">AActor</span><span class="o">&gt;</span>  <span class="n">LensEffectEmitterClass</span><span class="p">);</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p><img
+                                                src="/root/images/cpp/Udata/spawn-generic-camera-lens-effect.webp" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </article>
+        </div>
+    </div>
+    <div id="footer" class="page__footer">
+        <footer>
+           <div class="header-footer-inner-wrap">
+              <div class="page__footer-follow">
+                 <ul id="social-icons"></ul>
+              </div>
+              <div class="page__footer-copyright">2024 GoDOlE...
+              </div>
+           </div>
+        </footer>
+     </div>
+     <script src="/root/js/metadata.js"></script>
+     <script src="/root/js/fetch-info.js"></script>
+  
+  </body>
+
+</html>

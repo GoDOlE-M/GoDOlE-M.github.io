@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body class="layout--single">
+    <nav class="skip-links">
+        <h2 class="screen-reader-text">Skip links</h2>
+        <ul>
+            <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+            <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+            <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+        </ul>
+    </nav>
+    <div class="masthead">
+        <div class="masthead__primary">
+           <div class="header-footer-inner-wrap masthead__inner-wrap">
+              <div class="masthead__menu">
+                 <nav id="site-nav"> <!--a class="site-logo" href="/"><img src=" "
+                          alt="GoDOlE" width="140"></a-->
+                    <ul id="visible-links" class="visible-links">
+                       <li class="masthead__menu-item"> <a href="/index.html">Unreal Engine</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/cpp.html">C++</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/Tasks.html">Tasks</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/AutodeskMaya.html">Autodesk Maya</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/Games.html">Games</a></li>
+                       <li class="masthead__menu-item"> <a href="/root/pages/AboutMe.html">About Me</a></li>
+                    </ul>
+  
+                 </nav>
+              </div>
+           </div>
+        </div>
+        <div class="masthead__secondary">
+            <div class="header-footer-inner-wrap masthead__inner-wrap">
+                <div class="masthead__menu">
+                    <nav id="subsection-nav">
+                        <ul class="visible-links">
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uproperty.html">UPROPERTY</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/ufunction.html">UFUNCTION</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uclass.html">UCLASS</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/ustruct.html">USTRUCT</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uinterface.html">UINTERFACE</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uparam.html">UPARAM</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uenumandumeta.html">UENUM and UMETA</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="initial-content">
+        <div id="page__hero" class="page__hero">
+           <div class="wrapper hero_text">
+              <h1 id="page-title" class="page__title gradient" itemprop="headline"> UENUM</h1>
+              <p class="page__lead"> </p>
+           </div>
+        </div>
+        <div id="main" role="main">
+            <aside class="sidebar sticky">
+                <nav class="toc">
+                    <ul class="toc__menu">
+                        <li><a href="#general-points">General Points</a></li>
+                        <li><a href="#uenum">UENUM</a></li>
+                        <li><a href="#general">General</a></li>
+                        <li><a href="#umeta">UMETA</a></li>
+                        <li><a href="#display">Display</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article class="page " itemscope itemtype="https://schema.org/CreativeWork">
+                <meta itemprop="headline" content="All UENUM and UMETA Specifiers">
+                <meta itemprop="description" content="Both main and meta specifiers, including undocumented ones.">
+                <meta itemprop="datePublished" content="2021-10-05T00:00:00+00:00">
+                <section class="page__content" itemprop="text">
+
+                    <p>Unreal's <a
+                            href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/">Enum
+                            Specifiers</a> page lists all of the core specifiers and many of the metadata specifiers,
+                        but it is not an exhaustive list.</p>
+                    <p>This page attempts to be an exhaustive list of all the <code
+                            class="language-plaintext highlighter-rouge">UENUM</code> specifiers, giving explanations,
+                        sample code, screenshots and related links for each.</p>
+                    <h1 id="general-points">General Points</h1>
+                    <ul>
+                        <li>Tags are <strong>case insensitive</strong>, but I would recommend sticking to the case
+                            example here for readability.</li>
+                        <li>Quotation marks are optional if the values does not have spaces. e.g. <code
+                                class="language-plaintext highlighter-rouge">someBool=true</code> is treated the same as
+                            <code class="language-plaintext highlighter-rouge">someBool="true"</code>. Again, for
+                            readability I would recommend using quotation marks only around string-type properties.</li>
+                    </ul>
+                    <h1 id="uenum">UENUM</h1>
+                    <div class="unreal__outer">
+                        <h1 class="unreal__group" id="general">General</h1>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="category" class="no_toc unreal__prop">Category</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'UENUM(Category)');"
+                                                title="Copy UENUM(Category) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">Category</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="bitflags" class="no_toc unreal__prop">Bitflags</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UENUM(meta=(Bitflags))');"
+                                                title="Copy UENUM(meta=(Bitflags)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">Bitflags</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers">
+                                                <p>Indicates that this enumerated type can be used as flags by integer
+                                                    <code class="language-plaintext highlighter-rouge">UPROPERTY</code>
+                                                    variables that are set up with the <code
+                                                        class="language-plaintext highlighter-rouge">Bitmask</code>
+                                                    Metadata Specifier.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="useenumvaluesasmaskvaluesineditor" class="no_toc unreal__prop">Use Enum
+                                        Values As Mask Values In Editor</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-check-square "></i>bool</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UENUM(meta=(UseEnumValuesAsMaskValuesInEditor=true))');"
+                                                title="Copy UENUM(meta=(UseEnumValuesAsMaskValuesInEditor=true)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">UseEnumValuesAsMaskValuesInEditor</span><span class="o">=</span><span class="nb">true</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="experimental" class="no_toc unreal__prop">Experimental</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Meta</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UENUM(meta=(Experimental))');"
+                                                title="Copy UENUM(meta=(Experimental)) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">Experimental</span><span class="p">))</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>As far as I can tell, this doesn't affect functionality in any way, it's more
+                                            as "user documentation".</p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers">
+                                                <p>Labels this type as experimental and unsupported.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="scriptname" class="no_toc unreal__prop">Script Name</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'UENUM(ScriptName)');"
+                                                title="Copy UENUM(ScriptName) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">ScriptName</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers">
+                                                <p>The quoted string will be used as the name of this enumerated type in
+                                                    the editor, rather than the default name generated by Unreal Header
+                                                    Tool.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="tooltip" class="no_toc unreal__prop">Tool Tip</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'UENUM(ToolTip)');"
+                                                title="Copy UENUM(ToolTip) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">ToolTip</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers">
+                                                <p>Overrides the automatically generated tooltip from code comments.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="blueprinttype" class="no_toc unreal__prop">Blueprint Type</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'UENUM(BlueprintType)');"
+                                                title="Copy UENUM(BlueprintType) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Exposes the UENUM to be used as a variable type in Blueprint scripts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unreal__outer">
+                    <h1 id="umeta">UMETA</h1>
+                    <ul>
+                        <li>Technically all properties on UMETA properties are counted as MetaData, but unlike others
+                            they do not have to be grouped into a <code
+                                class="language-plaintext highlighter-rouge">meta</code> category</li>
+                        <li>It's possible to add and use your own tags to <code
+                                class="language-plaintext highlighter-rouge">UMETA</code> because they are counted as
+                            MetaData. Look how <code
+                                class="language-plaintext highlighter-rouge">MovieSceneBuiltInEasingFunctionCustomization.cpp</code>
+                            uses <code class="language-plaintext highlighter-rouge">UMETA(Grouping)</code> to group
+                            together enum values.</li>
+                    </ul>
+                    </div>
+                    <div class="unreal__outer">
+                        <h1 class="unreal__group" id="display">Display</h1>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="displayname" class="no_toc unreal__prop">Display Name</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UMETA(DisplayName=&quot;abc&quot;)');"
+                                                title="Copy UMETA(DisplayName=&quot;abc&quot;) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UMETA</span><span class="p">(</span><span class="n">DisplayName</span><span class="o">=</span><span class="s">"abc"</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers">
+                                                <p>This value's name will be the text provided here, rather than the
+                                                    code-generated name.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">UMetaExample</span> <span class="o">:</span> <span class="n">uint8</span>
+<span class="p">{</span>
+  <span class="n">Cat</span> <span class="n">UMETA</span><span class="p">(</span><span class="n">DisplayName</span><span class="o">=</span><span class="s">"Kitty"</span><span class="p">),</span>
+  <span class="n">Dog</span><span class="p">,</span>
+  <span class="n">Rooster</span><span class="p">,</span>
+<span class="p">};</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="hidden" class="no_toc unreal__prop">Hidden</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-flag "></i>flag</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy" onclick="copyToClipboard(this,'UMETA(Hidden)');"
+                                                title="Copy UMETA(Hidden) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UMETA</span><span class="p">(</span><span class="n">Hidden</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>This can be used in conjunction with <code
+                                                class="language-plaintext highlighter-rouge">ENUM_RANGE_BY_COUNT</code>
+                                            to allow <a href="/unreal/iterate-over-enum-tenumrange">iteration over <code
+                                                    class="language-plaintext highlighter-rouge">UENUM</code></a>. It
+                                            looks like "Spacer" used to be an alternative name for this.</p>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers">
+                                                <p>This value will not appear in the Editor.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">UMetaExample</span> <span class="o">:</span> <span class="n">uint8</span>
+<span class="p">{</span>
+  <span class="n">Cat</span><span class="p">,</span>
+  <span class="n">Dog</span><span class="p">,</span>
+  <span class="n">Rooster</span><span class="p">,</span>
+  <span class="n">Count</span> <span class="n">UMETA</span><span class="p">(</span><span class="n">Hidden</span><span class="p">),</span>
+<span class="p">};</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="tooltip" class="no_toc unreal__prop">Tool Tip</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UMETA(ToolTip=&quot;abc&quot;)');"
+                                                title="Copy UMETA(ToolTip=&quot;abc&quot;) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UMETA</span><span class="p">(</span><span class="n">ToolTip</span><span class="o">=</span><span class="s">"abc"</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <figure class="unreal-doc">
+                                            <blockquote
+                                                cite="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers">
+                                                <p>Overrides the automatically generated tooltip from code comments.</p>
+                                            </blockquote>
+                                            <figcaption><a
+                                                    href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Metadata/#enummetadataspecifiers"
+                                                    rel="nofollow noopener noreferrer">Unreal Documentation</a>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UENUM</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">UMetaExample</span> <span class="o">:</span> <span class="n">uint8</span>
+<span class="p">{</span>
+  <span class="n">Cat</span><span class="p">,</span>
+  <span class="n">Dog</span><span class="p">,</span>
+  <span class="n">Rooster</span> <span class="n">UMETA</span><span class="p">(</span><span class="n">ToolTip</span><span class="o">=</span><span class="s">"It's like a chicken"</span><span class="p">),</span>
+  <span class="n">Count</span><span class="p">,</span>
+<span class="p">};</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unreal__prop">
+                            <div class="prop__item"> <code class="left unreal__prefix"></code>
+                                <div class="right">
+                                    <h3 id="rowtype" class="no_toc unreal__prop">Row Type</h3>
+                                </div>
+                            </div>
+                            <div class="prop__item">
+                                <div class="left">
+                                    <div class="box">
+                                        <h5>Position:</h5>
+                                        <p>Main</p>
+                                    </div>
+                                    <div class="box">
+                                        <h5>Type:</h5>
+                                        <p class="unreal__type"> <i class="fa-fw fas fa-file-alt "></i>string</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="body">
+                                        <p><button class="copy"
+                                                onclick="copyToClipboard(this,'UMETA(RowType=&quot;abc&quot;)');"
+                                                title="Copy UMETA(RowType=&quot;abc&quot;) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    alt="Copy to clipboard" />Copy</button></p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">UMETA</span><span class="p">(</span><span class="n">RowType</span><span class="o">=</span><span class="s">"abc"</span><span class="p">)</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                        <p>Allows the editor drop-down of a <code
+                                                class="language-plaintext highlighter-rouge">FDataTableRowHandle</code>
+                                            to only show data tables of a specific row type. Currently undocumented but
+                                            implemented in <a
+                                                href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/DetailCustomizations/Private/DataTableCustomization.cpp#L37"><code
+                                                    class="language-plaintext highlighter-rouge">DataTableCustomization.cpp</code></a>.
+                                        </p>
+                                        <div class="language-cpp highlighter-rouge">
+                                            <div class="highlight">
+                                                <pre class="highlight"><code><span class="n">USTRUCT</span><span class="p">(</span><span class="n">BlueprintType</span><span class="p">)</span>
+<span class="k">struct</span> <span class="nc">FMyStruct</span>
+<span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">};</span>
+
+<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">EditAnywhere</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">RowType</span> <span class="o">=</span> <span class="s">"/Script/MyModule.MyStruct"</span><span class="p">))</span>
+<span class="n">FDataTableRowHandle</span> <span class="n">RowHandleExample</span><span class="p">;</span>
+</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </article>
+        </div>
+    </div>
+    <div id="footer" class="page__footer">
+        <footer>
+           <div class="header-footer-inner-wrap">
+              <div class="page__footer-follow">
+                 <ul id="social-icons"></ul>
+              </div>
+              <div class="page__footer-copyright">2024 GoDOlE...
+              </div>
+           </div>
+        </footer>
+     </div>
+     <script src="/root/js/metadata.js"></script>
+     <script src="/root/js/fetch-info.js"></script>
+  
+  </body>
+
+</html>
