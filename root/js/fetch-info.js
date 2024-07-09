@@ -47,3 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function copyToClipboard(element, text)
+{
+	element.innerText = "Copied!";
+	navigator.clipboard.writeText(text);
+}
