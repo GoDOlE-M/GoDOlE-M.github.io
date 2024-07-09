@@ -3880,7 +3880,7 @@ table.code-comparison td figure.highlight {
 }
 
 .svg-filter-link {
-    filter: invert(58%) sepia(92%) saturate(346%) hue-rotate(91deg) brightness(87%) contrast(86%)
+    filter: invert(76%) sepia(76%) saturate(1767%) hue-rotate(214deg) brightness(102%) contrast(100%)
 }
 
 div.highlighter-rouge,figure.highlight {
@@ -4915,3 +4915,4 @@ ul li {
     margin-top: 0px;
     gap: 60px; 
 }
+
