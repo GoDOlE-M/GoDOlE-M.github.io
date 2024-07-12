@@ -16,22 +16,23 @@
     </nav>
     <div class="masthead">
         <div class="masthead__primary">
-           <div class="header-footer-inner-wrap masthead__inner-wrap">
-              <div class="masthead__menu">
-                 <nav id="site-nav"> <!--a class="site-logo" href="/"><img src=" "
+            <div class="header-footer-inner-wrap masthead__inner-wrap">
+                <div class="masthead__menu">
+                    <nav id="site-nav"> <!--a class="site-logo" href="/"><img src=" "
                           alt="GoDOlE" width="140"></a-->
-                    <ul id="visible-links" class="visible-links">
-                       <li class="masthead__menu-item"> <a href="/index.html">Unreal Engine</a></li>
-                       <li class="masthead__menu-item"> <a href="/root/pages/cpp.html">C++</a></li>
-                       <li class="masthead__menu-item"> <a href="/root/pages/Tasks.html">Tasks</a></li>
-                       <li class="masthead__menu-item"> <a href="/root/pages/AutodeskMaya.html">Autodesk Maya</a></li>
-                       <li class="masthead__menu-item"> <a href="/root/pages/Games.html">Games</a></li>
-                       <li class="masthead__menu-item"> <a href="/root/pages/AboutMe.html">About Me</a></li>
-                    </ul>
-  
-                 </nav>
-              </div>
-           </div>
+                        <ul id="visible-links" class="visible-links">
+                            <li class="masthead__menu-item"> <a href="/index.html">Unreal Engine</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp.html">C++</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/Tasks.html">Tasks</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/AutodeskMaya.html">Autodesk Maya</a>
+                            </li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/Games.html">Games</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/AboutMe.html">About Me</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
         </div>
         <div class="masthead__secondary">
             <div class="header-footer-inner-wrap masthead__inner-wrap">
@@ -42,22 +43,23 @@
                             <li class="masthead__menu-item"> <a href="/root/pages/cpp/ufunction.html">UFUNCTION</a></li>
                             <li class="masthead__menu-item"> <a href="/root/pages/cpp/uclass.html">UCLASS</a></li>
                             <li class="masthead__menu-item"> <a href="/root/pages/cpp/ustruct.html">USTRUCT</a></li>
-                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uinterface.html">UINTERFACE</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uinterface.html">UINTERFACE</a>
+                            </li>
                             <li class="masthead__menu-item"> <a href="/root/pages/cpp/uparam.html">UPARAM</a></li>
-                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uenumandumeta.html">UENUM and UMETA</a></li>
+                            <li class="masthead__menu-item"> <a href="/root/pages/cpp/uenumandumeta.html">UENUM and
+                                    UMETA</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <div class="initial-content">
         <div id="page__hero" class="page__hero">
-           <div class="wrapper hero_text">
-              <h1 id="page-title" class="page__title gradient" itemprop="headline"> UPROPERTY</h1>
-              <p class="page__lead"> </p>
-           </div>
+            <div class="wrapper hero_text">
+                <h1 id="page-title" class="page__title gradient" itemprop="headline"> UPROPERTY</h1>
+                <p class="page__lead"> </p>
+            </div>
         </div>
         <div id="main" role="main">
             <aside class="sidebar sticky">
@@ -96,7 +98,7 @@
                             href="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Properties/Specifiers/">Property
                             Specifiers</a> page lists all of the core specifiers and many of the metadata specifiers,
                         but it is not an exhaustive list.</p>
-                    
+
                     <h1 id="general-points">General Points</h1>
                     <ul>
                         <li>Tags are <strong>case insensitive</strong>, but I would recommend sticking to the case
@@ -104,8 +106,10 @@
                         <li>Quotation marks are optional if the values does not have spaces. e.g. <code
                                 class="language-plaintext highlighter-rouge">someBool=true</code> is treated the same as
                             <code class="language-plaintext highlighter-rouge">someBool="true"</code>. Again, for
-                            readability I would recommend using quotation marks only around string-type properties.</li>
+                            readability I would recommend using quotation marks only around string-type properties.
+                        </li>
                     </ul>
+                    </section>
                     <div class="unreal__outer">
                         <h1 class="unreal__group" id="editor">Editor</h1>
                         <h2 class="no_toc unreal__subgroup" id="visibility">Visibility</h2>
@@ -143,7 +147,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(VisibleAnywhere)');"
                                                 title="Copy UPROPERTY(VisibleAnywhere) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -178,11 +183,9 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/visibility-defaults-selected.webp" />
+                                        <p><img src="/root/images/cpp/Udata/visibility-defaults-selected.webp" />
                                         </p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/visibility-instance-selected.webp" />
+                                        <p><img src="/root/images/cpp/Udata/visibility-instance-selected.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -221,12 +224,13 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(VisibleDefaultsOnly)');"
                                                 title="Copy UPROPERTY(VisibleDefaultsOnly) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
                                                 <pre class="highlight"><code><span class="n">UPROPERTY</span><span class="p">(</span><span class="n">VisibleDefaultsOnly</span><span class="p">)</span>
-</code></pre>
+</code></pre></div>
                                             </div>
                                         </div>
                                         <p>"Defaults" in this context means that this property will be visible in
@@ -262,8 +266,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/visibility-defaults-selected.webp" />
+                                        <p><img src="/root/images/cpp/Udata/visibility-defaults-selected.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -302,7 +305,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(VisibleInstanceOnly)');"
                                                 title="Copy UPROPERTY(VisibleInstanceOnly) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -338,8 +342,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/visibility-instance-selected.webp" />
+                                        <p><img src="/root/images/cpp/Udata/visibility-instance-selected.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -385,7 +388,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(EditAnywhere)');"
                                                 title="Copy UPROPERTY(EditAnywhere) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -421,11 +425,9 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/visibility-defaults-selected.webp" />
+                                        <p><img src="/root/images/cpp/Udata/visibility-defaults-selected.webp" />
                                         </p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/visibility-instance-selected.webp" />
+                                        <p><img src="/root/images/cpp/Udata/visibility-instance-selected.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -453,7 +455,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(EditInstanceOnly)');"
                                                 title="Copy UPROPERTY(EditInstanceOnly) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -497,8 +500,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/visibility-instance-selected.webp" />
+                                        <p><img src="/root/images/cpp/Udata/visibility-instance-selected.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -543,7 +545,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(EditDefaultsOnly)');"
                                                 title="Copy UPROPERTY(EditDefaultsOnly) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -570,8 +573,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/visibility-defaults-selected.webp" />
+                                        <p><img src="/root/images/cpp/Udata/visibility-defaults-selected.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -606,7 +608,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(HideInDetailPanel))');"
                                                 title="Copy UPROPERTY(meta=(HideInDetailPanel)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -618,7 +621,8 @@
                                             useful way in the details panel. The green + shape button that is shown on
                                             <code class="language-plaintext highlighter-rouge">UButton</code> is a
                                             UMG-specific editor customization so this does not relate to showing events
-                                            in that way.</p>
+                                            in that way.
+                                        </p>
                                         <figure class="unreal-doc">
                                             <blockquote
                                                 cite="https://docs.unrealengine.com/4.27/en-US/API/Runtime/CoreUObject/UObject/UM_3/">
@@ -657,7 +661,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ShowOnlyInnerProperties))');"
                                                 title="Copy UPROPERTY(meta=(ShowOnlyInnerProperties)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -701,8 +706,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/show-only-inner-properties.webp" />
+                                        <p><img src="/root/images/cpp/Udata/show-only-inner-properties.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -731,7 +735,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(Category=&quot;abc&quot;)');"
                                                 title="Copy UPROPERTY(Category=&quot;abc&quot;) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -794,8 +799,7 @@
                                         </div>
                                         <p><img src="/root/images/cpp/Udata/category.webp" />
                                         </p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/category-blueprint-graph.webp" />
+                                        <p><img src="/root/images/cpp/Udata/category-blueprint-graph.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -823,7 +827,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DisplayName=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(DisplayName=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -842,11 +847,9 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/displayname.webp" />
+                                        <p><img src="/root/images/cpp/Udata/displayname.webp" />
                                         </p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/displayname-blueprint-graph.webp" />
+                                        <p><img src="/root/images/cpp/Udata/displayname-blueprint-graph.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -874,7 +877,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ToolTip=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(ToolTip=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -928,7 +932,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(AdvancedDisplay)');"
                                                 title="Copy UPROPERTY(AdvancedDisplay) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -963,8 +968,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/advanceddisplay.gif" />
+                                        <p><img src="/root/images/cpp/Udata/advanceddisplay.gif" />
                                         </p>
                                     </div>
                                 </div>
@@ -1004,7 +1008,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(SimpleDisplay)');"
                                                 title="Copy UPROPERTY(SimpleDisplay) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1053,7 +1058,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1061,7 +1066,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ShowInnerProperties))');"
                                                 title="Copy UPROPERTY(meta=(ShowInnerProperties)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1098,7 +1104,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1106,7 +1112,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(FullyExpand=true))');"
                                                 title="Copy UPROPERTY(meta=(FullyExpand=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1145,7 +1152,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1153,7 +1160,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(EditCondition=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(EditCondition=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1224,7 +1232,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1232,7 +1240,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(HideEditConditionToggle))');"
                                                 title="Copy UPROPERTY(meta=(HideEditConditionToggle)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1269,7 +1278,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1277,7 +1286,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(EditConditionHides))');"
                                                 title="Copy UPROPERTY(meta=(EditConditionHides)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1365,7 +1375,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1373,7 +1383,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(InlineEditConditionToggle))');"
                                                 title="Copy UPROPERTY(meta=(InlineEditConditionToggle)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1410,8 +1421,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/inline-edit-condition-toggle.gif" />
+                                        <p><img src="/root/images/cpp/Udata/inline-edit-condition-toggle.gif" />
                                         </p>
                                     </div>
                                 </div>
@@ -1446,7 +1456,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DisplayAfter=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(DisplayAfter=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1480,8 +1491,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/displayafter.webp" />
+                                        <p><img src="/root/images/cpp/Udata/displayafter.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -1515,7 +1525,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DisplayPriority=123))');"
                                                 title="Copy UPROPERTY(meta=(DisplayPriority=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1559,8 +1570,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/displaypriority.webp" />
+                                        <p><img src="/root/images/cpp/Udata/displaypriority.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -1596,7 +1606,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DisplayThumbnail=true))');"
                                                 title="Copy UPROPERTY(meta=(DisplayThumbnail=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1654,7 +1665,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1662,7 +1673,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(MaxPropertyDepth=123))');"
                                                 title="Copy UPROPERTY(meta=(MaxPropertyDepth=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1701,7 +1713,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(NonTransactional)');"
                                                 title="Copy UPROPERTY(NonTransactional) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1745,7 +1758,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1753,7 +1766,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ForceRebuildProperty=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(ForceRebuildProperty=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1798,7 +1812,8 @@
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(Instanced)');"
                                                 title="Copy UPROPERTY(Instanced) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1874,7 +1889,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ExposeFunctionCategories=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(ExposeFunctionCategories=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -1941,7 +1957,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -1949,7 +1965,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(EditInline))');"
                                                 title="Copy UPROPERTY(meta=(EditInline)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2006,7 +2023,8 @@
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(RepRetry)');"
                                                 title="Copy UPROPERTY(RepRetry) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2055,7 +2073,8 @@
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(Localized)');"
                                                 title="Copy UPROPERTY(Localized) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2111,7 +2130,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(FixedIncrement=123))');"
                                                 title="Copy UPROPERTY(meta=(FixedIncrement=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2156,7 +2176,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(NeedsLatentFixup))');"
                                                 title="Copy UPROPERTY(meta=(NeedsLatentFixup)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2202,7 +2223,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(LatentCallbackTarget))');"
                                                 title="Copy UPROPERTY(meta=(LatentCallbackTarget)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2249,7 +2271,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(NoResetToDefault))');"
                                                 title="Copy UPROPERTY(meta=(NoResetToDefault)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2281,8 +2304,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/noresettodefault.webp" />
+                                        <p><img src="/root/images/cpp/Udata/noresettodefault.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -2316,7 +2338,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorNumeric.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2324,7 +2346,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ClampMin=123))');"
                                                 title="Copy UPROPERTY(meta=(ClampMin=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2392,7 +2415,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorNumeric.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2400,7 +2423,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ClampMax=123))');"
                                                 title="Copy UPROPERTY(meta=(ClampMax=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2468,12 +2492,12 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorNumeric.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/Engine/Classes/Components/SkyAtmosphereComponent.h#L58"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2481,7 +2505,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(UIMin=123))');"
                                                 title="Copy UPROPERTY(meta=(UIMin=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2544,7 +2569,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorNumeric.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2552,7 +2577,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(UIMax=123))');"
                                                 title="Copy UPROPERTY(meta=(UIMax=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2604,7 +2630,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(NoSpinbox=true))');"
                                                 title="Copy UPROPERTY(meta=(NoSpinbox=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2652,12 +2679,12 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorNumeric.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Plugins/Runtime/HairStrands/Source/HairStrandsCore/Public/GroomAssetRendering.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2665,7 +2692,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(SliderExponent=123))');"
                                                 title="Copy UPROPERTY(meta=(SliderExponent=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2721,7 +2749,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorNumeric.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2729,7 +2757,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(Delta=123))');"
                                                 title="Copy UPROPERTY(meta=(Delta=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2783,7 +2812,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(Multiple=123))');"
                                                 title="Copy UPROPERTY(meta=(Multiple=123)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2832,12 +2862,12 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release//Engine/Source/Runtime/Core/Private/Math/UnitConversion.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/DetailCustomizations/Private/LocalLightComponentDetails.cpp#L42"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2845,7 +2875,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(Units=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(Units=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2868,7 +2899,8 @@
                                             with <code
                                                 class="language-plaintext highlighter-rouge">Units="Celsius"</code>
                                             results in <code
-                                                class="language-plaintext highlighter-rouge">37.77779 °C</code>.</p>
+                                                class="language-plaintext highlighter-rouge">37.77779 °C</code>.
+                                        </p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
                                                 <pre class="highlight"><code><span class="n">UPROPERTY</span><span class="p">(</span><span class="n">EditAnywhere</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">(</span><span class="n">Units</span><span class="o">=</span><span class="s">"Celsius"</span><span class="p">))</span>
@@ -2885,8 +2917,7 @@
                                             </div>
                                         </div>
                                         <p><img src="/root/images/cpp/Udata/units.webp" /></p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/units-conversion.gif" />
+                                        <p><img src="/root/images/cpp/Udata/units-conversion.gif" />
                                         </p>
                                     </div>
                                 </div>
@@ -2917,12 +2948,12 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorNumeric.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/DetailCustomizations/Private/LocalLightComponentDetails.cpp#L42"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2930,7 +2961,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ForceUnits=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(ForceUnits=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -2968,10 +3000,10 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/Engine/Classes/Engine/SkeletalMesh.h#L96"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Plugins/Experimental/MeshModelingToolset/Source/MeshModelingTools/Public/MeshAttributePaintTool.h#L129"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -2979,7 +3011,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ArrayClamp=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(ArrayClamp=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3044,7 +3077,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ValidEnumValues=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(ValidEnumValues=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3104,7 +3138,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(InvalidEnumValues=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(InvalidEnumValues=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3150,7 +3185,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(GetOptions=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(GetOptions=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3199,7 +3235,8 @@
                                                 class="language-plaintext highlighter-rouge">UObject</code>s, where
                                             <code class="language-plaintext highlighter-rouge">USTRUCT</code>s would not
                                             normally be able to contain <code
-                                                class="language-plaintext highlighter-rouge">UFUNCTION</code>S</p>
+                                                class="language-plaintext highlighter-rouge">UFUNCTION</code>S
+                                        </p>
                                         <p><code class="language-plaintext highlighter-rouge">GetOptions</code> also
                                             supports external static function references via <code
                                                 class="language-plaintext highlighter-rouge">Module.Class.Function</code>
@@ -3306,7 +3343,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(GetKeyOptions=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(GetKeyOptions=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3357,7 +3395,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(GetValueOptions=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(GetValueOptions=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3401,7 +3440,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(MultiLine=true))');"
                                                 title="Copy UPROPERTY(meta=(MultiLine=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3463,7 +3503,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(PasswordField=true))');"
                                                 title="Copy UPROPERTY(meta=(PasswordField=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3497,8 +3538,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/passwordfield.webp" />
+                                        <p><img src="/root/images/cpp/Udata/passwordfield.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -3524,7 +3564,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -3532,7 +3572,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ArraySizeEnum))');"
                                                 title="Copy UPROPERTY(meta=(ArraySizeEnum)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3562,8 +3603,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/arraysizeenum.webp" />
+                                        <p><img src="/root/images/cpp/Udata/arraysizeenum.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -3597,7 +3637,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(EditFixedSize)');"
                                                 title="Copy UPROPERTY(EditFixedSize) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3607,7 +3648,8 @@
                                         </div>
                                         <p>Not sure the best place to initialize the contents of a EditFixedSize-marked
                                             <code class="language-plaintext highlighter-rouge">TArray</code> but it
-                                            seems to work in the constructor.</p>
+                                            seems to work in the constructor.
+                                        </p>
                                         <figure class="unreal-doc">
                                             <blockquote
                                                 cite="https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/GameplayArchitecture/Properties/Specifiers/">
@@ -3630,8 +3672,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/editfixedsize.webp" />
+                                        <p><img src="/root/images/cpp/Udata/editfixedsize.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -3662,7 +3703,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -3670,7 +3711,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(EditFixedOrder))');"
                                                 title="Copy UPROPERTY(meta=(EditFixedOrder)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3695,8 +3737,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/editfixedorder.webp" />
+                                        <p><img src="/root/images/cpp/Udata/editfixedorder.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -3721,7 +3762,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/PropertyEditor/Private/PropertyNode.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -3729,7 +3770,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(TitleProperty=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(TitleProperty=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3748,7 +3790,8 @@
                                                 class="language-plaintext highlighter-rouge">float</code>, <code
                                                 class="language-plaintext highlighter-rouge">int32</code>, <code
                                                 class="language-plaintext highlighter-rouge">FGameplayTag</code>
-                                            properties would usable as a title for array elements.</p>
+                                            properties would usable as a title for array elements.
+                                        </p>
                                         <p>As of Unreal 5.0, you can use <code
                                                 class="language-plaintext highlighter-rouge">FText::Format</code>-like
                                             formatting to output multiple parts of structs in the array. See the <code
@@ -3804,11 +3847,9 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/titleproperty.webp" />
+                                        <p><img src="/root/images/cpp/Udata/titleproperty.webp" />
                                         </p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/titleproperty-format.webp" />
+                                        <p><img src="/root/images/cpp/Udata/titleproperty-format.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -3842,7 +3883,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(NoElementDuplicate))');"
                                                 title="Copy UPROPERTY(meta=(NoElementDuplicate)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3900,7 +3942,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(HideAlphaChannel))');"
                                                 title="Copy UPROPERTY(meta=(HideAlphaChannel)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -3925,11 +3968,9 @@
                                                     rel="nofollow noopener noreferrer">Unreal Documentation</a>
                                             </figcaption>
                                         </figure>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/hidealphachannel.webp" />
+                                        <p><img src="/root/images/cpp/Udata/hidealphachannel.webp" />
                                         </p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/hidealphachannel-colorpicker.webp" />
+                                        <p><img src="/root/images/cpp/Udata/hidealphachannel-colorpicker.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -3956,7 +3997,8 @@
                                 <div class="right">
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(NoClear)');"
-                                                title="Copy UPROPERTY(NoClear) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                title="Copy UPROPERTY(NoClear) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png"
                                                     class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
@@ -4017,7 +4059,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/c3caf7b6bf12ae4c8e09b606f10a09776b4d1f38/Engine/Plugins/Experimental/VirtualProductionUtilities/Source/VPUtilities/Public/VPViewportTickableActorBase.h#L11"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -4025,7 +4067,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(Bitmask))');"
                                                 title="Copy UPROPERTY(meta=(Bitmask)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4086,7 +4129,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(BitmaskEnum=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(BitmaskEnum=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4122,7 +4166,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(AllowPreserveRatio))');"
                                                 title="Copy UPROPERTY(meta=(AllowPreserveRatio)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4158,8 +4203,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/allowpreserveratio.webp" />
+                                        <p><img src="/root/images/cpp/Udata/allowpreserveratio.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -4187,7 +4231,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(MakeEditWidget))');"
                                                 title="Copy UPROPERTY(meta=(MakeEditWidget)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4219,11 +4264,9 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/makeeditwidget-property.webp" />
+                                        <p><img src="/root/images/cpp/Udata/makeeditwidget-property.webp" />
                                         </p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/makeeditwidget-world.webp" />
+                                        <p><img src="/root/images/cpp/Udata/makeeditwidget-world.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -4252,7 +4295,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ReadOnlyKeys))');"
                                                 title="Copy UPROPERTY(meta=(ReadOnlyKeys)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4288,7 +4332,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ForceInlineRow))');"
                                                 title="Copy UPROPERTY(meta=(ForceInlineRow)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4306,8 +4351,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/force-inline-row.webp" />
+                                        <p><img src="/root/images/cpp/Udata/force-inline-row.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -4335,7 +4379,8 @@
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(SaveGame)');"
                                                 title="Copy UPROPERTY(SaveGame) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4393,7 +4438,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(SerializeText)');"
                                                 title="Copy UPROPERTY(SerializeText) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4438,7 +4484,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(SkipSerialization)');"
                                                 title="Copy UPROPERTY(SkipSerialization) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4482,7 +4529,8 @@
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(Transient)');"
                                                 title="Copy UPROPERTY(Transient) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4527,7 +4575,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(DuplicateTransient)');"
                                                 title="Copy UPROPERTY(DuplicateTransient) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4581,7 +4630,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(TransientToolProperty))');"
                                                 title="Copy UPROPERTY(meta=(TransientToolProperty)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4620,7 +4670,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(NonPIEDuplicateTransient)');"
                                                 title="Copy UPROPERTY(NonPIEDuplicateTransient) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4666,7 +4717,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(TextExportTransient)');"
                                                 title="Copy UPROPERTY(TextExportTransient) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4726,7 +4778,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(BlueprintReadOnly)');"
                                                 title="Copy UPROPERTY(BlueprintReadOnly) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4770,8 +4823,7 @@
                                                     rel="nofollow noopener noreferrer">Unreal Documentation</a>
                                             </figcaption>
                                         </figure>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/blueprintvisibility.webp" />
+                                        <p><img src="/root/images/cpp/Udata/blueprintvisibility.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -4805,7 +4857,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(BlueprintReadWrite)');"
                                                 title="Copy UPROPERTY(BlueprintReadWrite) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4826,8 +4879,7 @@
                                                     rel="nofollow noopener noreferrer">Unreal Documentation</a>
                                             </figcaption>
                                         </figure>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/blueprintvisibility.webp" />
+                                        <p><img src="/root/images/cpp/Udata/blueprintvisibility.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -4862,7 +4914,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(BlueprintGetter=&quot;abc&quot;)');"
                                                 title="Copy UPROPERTY(BlueprintGetter=&quot;abc&quot;) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -4949,7 +5002,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(BlueprintSetter=&quot;abc&quot;)');"
                                                 title="Copy UPROPERTY(BlueprintSetter=&quot;abc&quot;) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5012,7 +5066,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(AllowPrivateAccess=true))');"
                                                 title="Copy UPROPERTY(meta=(AllowPrivateAccess=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5066,7 +5121,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/CoreUObject/Public/UObject/NoExportTypes.h#L1079"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -5074,7 +5129,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(MakeStructureDefaultValue=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(MakeStructureDefaultValue=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5145,7 +5201,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ExposeOnSpawn=true))');"
                                                 title="Copy UPROPERTY(meta=(ExposeOnSpawn=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5206,8 +5263,7 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/exposeonspawn.webp" />
+                                        <p><img src="/root/images/cpp/Udata/exposeonspawn.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -5242,7 +5298,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(BlueprintAssignable)');"
                                                 title="Copy UPROPERTY(BlueprintAssignable) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5288,7 +5345,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(BlueprintAuthorityOnly)');"
                                                 title="Copy UPROPERTY(BlueprintAuthorityOnly) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5333,7 +5391,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(BlueprintCallable)');"
                                                 title="Copy UPROPERTY(BlueprintCallable) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5378,7 +5437,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(IsBindableEvent=true))');"
                                                 title="Copy UPROPERTY(meta=(IsBindableEvent=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5439,7 +5499,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DeprecatedProperty))');"
                                                 title="Copy UPROPERTY(meta=(DeprecatedProperty)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5488,11 +5549,9 @@
 </code></pre>
                                             </div>
                                         </div>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/deprecatedproperty-simple.webp" />
+                                        <p><img src="/root/images/cpp/Udata/deprecatedproperty-simple.webp" />
                                         </p>
-                                        <p><img
-                                                src="/root/images/cpp/Udata/deprecatedproperty-complex.webp" />
+                                        <p><img src="/root/images/cpp/Udata/deprecatedproperty-complex.webp" />
                                         </p>
                                     </div>
                                 </div>
@@ -5520,7 +5579,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DeprecationMessage=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(DeprecationMessage=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5571,7 +5631,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DisallowedClasses=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(DisallowedClasses=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5623,7 +5684,8 @@
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(Replicated)');"
                                                 title="Copy UPROPERTY(Replicated) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5710,7 +5772,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(NotReplicated)');"
                                                 title="Copy UPROPERTY(NotReplicated) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5779,7 +5842,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Plugins/Online/OnlineFramework/Source/Lobby/Public/LobbyBeaconPlayerState#L36"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -5787,7 +5850,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(ReplicatedUsing=&quot;abc&quot;)');"
                                                 title="Copy UPROPERTY(ReplicatedUsing=&quot;abc&quot;) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5876,7 +5940,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprintEditorUtils.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -5884,7 +5948,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(BindWidget))');"
                                                 title="Copy UPROPERTY(meta=(BindWidget)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -5896,8 +5961,7 @@
                                                 class="language-plaintext highlighter-rouge">UWidget</code> variables
                                             defined in <code
                                                 class="language-plaintext highlighter-rouge">UUserWidget</code>
-                                            Blueprint. If that makes no sense, <a
-                                                href="">check out this
+                                            Blueprint. If that makes no sense, <a href="">check out this
                                                 tutorial</a></p>
                                         <p>Technically what happens is widgets within the UserWidget Blueprint's widget
                                             tree are bound to matching <code
@@ -5947,7 +6011,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprintEditorUtils.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -5955,7 +6019,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(BindWidgetOptional))');"
                                                 title="Copy UPROPERTY(meta=(BindWidgetOptional)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6010,7 +6075,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprintEditorUtils.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -6018,7 +6083,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(BindWidgetAnim))');"
                                                 title="Copy UPROPERTY(meta=(BindWidgetAnim)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6067,7 +6133,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprintEditorUtils.cpp"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Source</a></p>
+                                                    aria-hidden="true"  ></i>Source</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -6075,7 +6141,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(BindWidgetAnimOptional))');"
                                                 title="Copy UPROPERTY(meta=(BindWidgetAnimOptional)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6122,7 +6189,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DataTableImportOptional=true))');"
                                                 title="Copy UPROPERTY(meta=(DataTableImportOptional=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6157,7 +6225,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(RequiredAssetDataTags=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(RequiredAssetDataTags=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6199,7 +6268,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(RowType=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(RowType=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6239,7 +6309,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/Engine/Classes/Engine/RendererSettings.h#L214"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -6247,7 +6317,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ConsoleVariable=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(ConsoleVariable=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6256,7 +6327,8 @@
                                             </div>
                                         </div>
                                         <p>Exposes a variable to the developer console (accessible through the tilde key
-                                            <code class="language-plaintext highlighter-rouge">~</code>).</p>
+                                            <code class="language-plaintext highlighter-rouge">~</code>).
+                                        </p>
                                         <p>Heavily used in developer settings.</p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6293,7 +6365,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(BlueprintCompilerGeneratedDefaults))');"
                                                 title="Copy UPROPERTY(meta=(BlueprintCompilerGeneratedDefaults)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6345,7 +6418,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release//Engine/Source/Developer/Localization/Public/LocalizationTargetTypes.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -6353,7 +6426,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(MetaClass=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(MetaClass=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6370,7 +6444,8 @@
                                                 class="language-plaintext highlighter-rouge">TSoftClassPtr</code> and
                                             <code class="language-plaintext highlighter-rouge">TSoftObjectPtr</code> use
                                             template parameters instead of <code
-                                                class="language-plaintext highlighter-rouge">MetaClass</code>.</p>
+                                                class="language-plaintext highlighter-rouge">MetaClass</code>.
+                                        </p>
                                         <figure class="unreal-doc">
                                             <blockquote
                                                 cite="https://docs.unrealengine.com/4.27/en-US/API/Runtime/CoreUObject/UObject/UM_3/">
@@ -6434,7 +6509,7 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/Engine/Classes/Engine/Engine.h#L650"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -6442,7 +6517,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(AllowedClasses=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(AllowedClasses=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6452,7 +6528,8 @@
                                         </div>
                                         <p>Not sure how this is different to MetaClass. Note that the string must
                                             <em>not</em> contain prefixes, so "Actor" is correct, "AActor" is incorrect.
-                                            This <em>does</em> work with interfaces.</p>
+                                            This <em>does</em> work with interfaces.
+                                        </p>
                                         <figure class="unreal-doc">
                                             <blockquote
                                                 cite="https://docs.unrealengine.com/4.27/en-US/API/Runtime/CoreUObject/UObject/UM_3/">
@@ -6465,7 +6542,8 @@
                                                     assets to be displayed in the asset picker (<code
                                                         class="language-plaintext highlighter-rouge">FSoftObjectPath</code>)
                                                     or component picker or class viewer (<code
-                                                        class="language-plaintext highlighter-rouge">UClass</code>).</p>
+                                                        class="language-plaintext highlighter-rouge">UClass</code>).
+                                                </p>
                                             </blockquote>
                                             <figcaption><a
                                                     href="https://docs.unrealengine.com/4.27/en-US/API/Runtime/CoreUObject/UObject/UM_3/"
@@ -6504,7 +6582,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(AllowAbstract))');"
                                                 title="Copy UPROPERTY(meta=(AllowAbstract)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6560,7 +6639,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(MustImplement=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(MustImplement=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6612,7 +6692,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ShowTreeView))');"
                                                 title="Copy UPROPERTY(meta=(ShowTreeView)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6663,7 +6744,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(BlueprintBaseOnly))');"
                                                 title="Copy UPROPERTY(meta=(BlueprintBaseOnly)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6727,7 +6809,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ExactClass))');"
                                                 title="Copy UPROPERTY(meta=(ExactClass)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6775,7 +6858,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(OnlyPlaceable))');"
                                                 title="Copy UPROPERTY(meta=(OnlyPlaceable)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6827,7 +6911,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(DisallowCreateNew))');"
                                                 title="Copy UPROPERTY(meta=(DisallowCreateNew)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6839,7 +6924,8 @@
                                                 class="language-plaintext highlighter-rouge">TSubclassOf&lt;T&gt;</code>,
                                             <code class="language-plaintext highlighter-rouge">UClass*</code>, <code
                                                 class="language-plaintext highlighter-rouge">FSoftClassPath</code>),
-                                            this causes the "Create New" plus button to be hidden.</p>
+                                            this causes the "Create New" plus button to be hidden.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -6873,7 +6959,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(AllowAnyActor))');"
                                                 title="Copy UPROPERTY(meta=(AllowAnyActor)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6934,7 +7021,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(UseComponentPicker))');"
                                                 title="Copy UPROPERTY(meta=(UseComponentPicker)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6946,7 +7034,8 @@
                                                 class="language-plaintext highlighter-rouge">FComponentReference</code>
                                             properties.</p>
                                         <p>Only works on components attached to actor instances in levels. Does
-                                            <em>not</em> work when editing a Blueprint subclass.</p>
+                                            <em>not</em> work when editing a Blueprint subclass.
+                                        </p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
                                                 <pre class="highlight"><code><span class="n">UPROPERTY</span><span class="p">(</span><span class="n">EditAnywhere</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">UseComponentPicker</span><span class="p">,</span> <span class="n">AllowAnyActor</span><span class="p">))</span>
@@ -6982,7 +7071,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(Categories=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(Categories=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -6992,7 +7082,8 @@
                                         </div>
                                         <p>This allows you to limit which gameplaytags are allowed to be chosen for a
                                             <code class="language-plaintext highlighter-rouge">FGameplayTag</code>
-                                            property. Multiple tags can be specified with commas separating them.</p>
+                                            property. Multiple tags can be specified with commas separating them.
+                                        </p>
                                         <p>Can also be used on <code
                                                 class="language-plaintext highlighter-rouge">UPARAM</code> to limit the
                                             Gameplay Tags allowed on a <code
@@ -7046,7 +7137,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(RelativePath))');"
                                                 title="Copy UPROPERTY(meta=(RelativePath)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7091,7 +7183,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ContentDir))');"
                                                 title="Copy UPROPERTY(meta=(ContentDir)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7145,7 +7238,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(RelativeToGameContentDir))');"
                                                 title="Copy UPROPERTY(meta=(RelativeToGameContentDir)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7202,7 +7296,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(RelativeToGameDir))');"
                                                 title="Copy UPROPERTY(meta=(RelativeToGameDir)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7252,7 +7347,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(FilePathFilter=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(FilePathFilter=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7312,7 +7408,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ForceShowEngineContent))');"
                                                 title="Copy UPROPERTY(meta=(ForceShowEngineContent)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7358,7 +7455,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ForceShowPluginContent))');"
                                                 title="Copy UPROPERTY(meta=(ForceShowPluginContent)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7403,7 +7501,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(HideViewOptions))');"
                                                 title="Copy UPROPERTY(meta=(HideViewOptions)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7448,7 +7547,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(LongPackageName))');"
                                                 title="Copy UPROPERTY(meta=(LongPackageName)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7494,7 +7594,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ScriptNoExport))');"
                                                 title="Copy UPROPERTY(meta=(ScriptNoExport)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7541,7 +7642,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ScriptName=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(ScriptName=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7588,7 +7690,8 @@
                                 <div class="right">
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(Config)');"
-                                                title="Copy UPROPERTY(Config) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                title="Copy UPROPERTY(Config) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png"
                                                     class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
@@ -7639,7 +7742,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(GlobalConfig)');"
                                                 title="Copy UPROPERTY(GlobalConfig) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7695,7 +7799,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ConfigHierarchyEditable))');"
                                                 title="Copy UPROPERTY(meta=(ConfigHierarchyEditable)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7747,7 +7852,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(ConfigRestartRequired=true))');"
                                                 title="Copy UPROPERTY(meta=(ConfigRestartRequired=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7796,7 +7902,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(AllowedTypes=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(AllowedTypes=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7895,7 +8002,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(AssetRegistrySearchable)');"
                                                 title="Copy UPROPERTY(AssetRegistrySearchable) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7944,7 +8052,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(Untracked))');"
                                                 title="Copy UPROPERTY(meta=(Untracked)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -7990,7 +8099,8 @@
                                 <div class="right">
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(Interp)');"
-                                                title="Copy UPROPERTY(Interp) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                title="Copy UPROPERTY(Interp) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png"
                                                     class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
@@ -8000,8 +8110,7 @@
                                             </div>
                                         </div>
                                         <p>Makes a variable animate-able on timelines. Works for any kind of timeline,
-                                            including in UMG. For a more detailed example <a
-                                                href="">check
+                                            including in UMG. For a more detailed example <a href="">check
                                                 out this tutorial</a>.</p>
                                         <figure class="unreal-doc">
                                             <blockquote
@@ -8047,7 +8156,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(AlwaysAsPin))');"
                                                 title="Copy UPROPERTY(meta=(AlwaysAsPin)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8099,7 +8209,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(NeverAsPin))');"
                                                 title="Copy UPROPERTY(meta=(NeverAsPin)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8145,7 +8256,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(PinShownByDefault))');"
                                                 title="Copy UPROPERTY(meta=(PinShownByDefault)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8191,7 +8303,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(PinHiddenByDefault))');"
                                                 title="Copy UPROPERTY(meta=(PinHiddenByDefault)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8237,7 +8350,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(CustomizeProperty))');"
                                                 title="Copy UPROPERTY(meta=(CustomizeProperty)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8286,7 +8400,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(OverridingInputProperty=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(OverridingInputProperty=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8349,7 +8464,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(RequiredInput=true))');"
                                                 title="Copy UPROPERTY(meta=(RequiredInput=true)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8408,7 +8524,8 @@
                                 <div class="right">
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(Export)');"
-                                                title="Copy UPROPERTY(Export) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                title="Copy UPROPERTY(Export) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png"
                                                     class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
@@ -8455,7 +8572,8 @@
                                 <div class="right">
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(Native)');"
-                                                title="Copy UPROPERTY(Native) to clipboard"><img src="/root/images/cpp/CppCode_T2.png"
+                                                title="Copy UPROPERTY(Native) to clipboard"><img
+                                                    src="/root/images/cpp/CppCode_T2.png"
                                                     class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
@@ -8502,7 +8620,8 @@
                                     <div class="body">
                                         <p><button class="copy" onclick="copyToClipboard(this,'UPROPERTY(NoExport)');"
                                                 title="Copy UPROPERTY(NoExport) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8548,7 +8667,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(IgnoreForMemberInitializationTest))');"
                                                 title="Copy UPROPERTY(meta=(IgnoreForMemberInitializationTest)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8599,10 +8719,10 @@
                                     <div class="box">
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/Engine/Classes/Engine/PrimaryAssetLabel.h"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                         <p><a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Source/Runtime/Engine/Classes/Engine/AssetManager.h#L544"
                                                 rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github"
-                                                    aria-hidden="true" style="#fff"></i>Example</a></p>
+                                                    aria-hidden="true"  ></i>Example</a></p>
                                     </div>
                                 </div>
                                 <div class="right">
@@ -8610,7 +8730,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(AssetBundles=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(AssetBundles=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8665,7 +8786,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(IncludeAssetBundles=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(IncludeAssetBundles=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8732,7 +8854,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(XAxisName=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(XAxisName=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8780,7 +8903,8 @@
                                         <p><button class="copy"
                                                 onclick="copyToClipboard(this,'UPROPERTY(meta=(YAxisName=&quot;abc&quot;))');"
                                                 title="Copy UPROPERTY(meta=(YAxisName=&quot;abc&quot;)) to clipboard"><img
-                                                    src="/root/images/cpp/CppCode_T2.png" class="svg-inline--fa svg-filter-link"
+                                                    src="/root/images/cpp/CppCode_T2.png"
+                                                    class="svg-inline--fa svg-filter-link"
                                                     alt="Copy to clipboard" />Copy</button></p>
                                         <div class="language-cpp highlighter-rouge">
                                             <div class="highlight">
@@ -8806,18 +8930,18 @@
     </div>
     <div id="footer" class="page__footer">
         <footer>
-           <div class="header-footer-inner-wrap">
-              <div class="page__footer-follow">
-                 <ul id="social-icons"></ul>
-              </div>
-              <div class="page__footer-copyright">2024 GoDOlE...
-              </div>
-           </div>
+            <div class="header-footer-inner-wrap">
+                <div class="page__footer-follow">
+                    <ul id="social-icons"></ul>
+                </div>
+                <div class="page__footer-copyright">2024 GoDOlE...
+                </div>
+            </div>
         </footer>
-     </div>
-     <script src="/root/js/metadata.js"></script>
-     <script src="/root/js/fetch-info.js"></script>
-  
-  </body>
+    </div>
+    <script src="/root/js/metadata.js"></script>
+    <script src="/root/js/fetch-info.js"></script>
+
+</body>
 
 </html>
