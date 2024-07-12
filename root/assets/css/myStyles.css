@@ -1734,7 +1734,7 @@ body {
 @media(min-width: 8em) {
     .page {
         float:right;
-        width: calc(100% - 200px)
+        width: calc(100% - 0px)
     }
 }
 
